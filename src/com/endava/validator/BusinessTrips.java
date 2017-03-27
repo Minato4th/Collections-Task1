@@ -18,7 +18,7 @@ public class BusinessTrips {
     public BusinessTrips(){
         this.employees = new TreeSet<>();
         this.workers = new HashSet<>();
-        this.visitors = new TreeMap<>();
+        this.visitors = new TreeMap<>(Collections.reverseOrder());
         this.workersList = new ArrayList<>();
     }
 
